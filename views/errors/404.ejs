@@ -1,0 +1,19 @@
+<%- include('../partials/header') %>
+
+<div class="error-container">
+    <div class="error-content">
+        <h1 class="error-code">404</h1>
+        <h2 class="error-title">Page Not Found</h2>
+        <p class="error-message">
+            The page you're looking for doesn't exist.
+            <br>
+            <strong>URL:</strong> <%= url %>
+        </p>
+        <div class="error-actions">
+            <a href="/" class="btn btn-primary">Go Home</a>
+            <a href="javascript:history.back()" class="btn btn-secondary">Go Back</a>
+        </div>
+    </div>
+</div>
+
+<%- include('../partials/footer') %>
