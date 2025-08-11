@@ -1,0 +1,44 @@
+<%- include('../partials/header') %>
+
+<div style="max-width: 800px; margin: 20px auto; padding: 20px;">
+    <h1><%= heading %></h1>
+    
+    <div style="line-height: 1.6;">
+        <h2>Privacy-First PDF Tools</h2>
+        <p>SmartPDF is a simple, secure PDF conversion tool built with privacy in mind.</p>
+        
+        <h3>Features:</h3>
+        <ul>
+            <li>PDF to Word conversion</li>
+            <li>No user registration required</li>
+            <li>Files deleted automatically after 15 minutes</li>
+            <li>No data collection or tracking</li>
+            <li>Open source</li>
+        </ul>
+        
+        <h3>Technical Stack:</h3>
+        <ul>
+            <li>Backend: Node.js + Express</li>
+            <li>Frontend: EJS templates</li>
+            <li>PDF Processing: pdf-parse + docx libraries</li>
+            <li>File Upload: Multer middleware</li>
+        </ul>
+        
+        <h3>Privacy Policy:</h3>
+        <p>
+            We take your privacy seriously. All uploaded files are:
+        </p>
+        <ul>
+            <li>Processed locally on our servers</li>
+            <li>Never shared with third parties</li>
+            <li>Automatically deleted after 15 minutes</li>
+            <li>Not logged or tracked</li>
+        </ul>
+        
+        <div style="margin: 20px 0;">
+            <a href="/" style="color: #007bff; text-decoration: none;">← Back to Home</a>
+        </div>
+    </div>
+</div>
+
+<%- include('../partials/footer') %>
