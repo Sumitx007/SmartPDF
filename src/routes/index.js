@@ -1,20 +1,7 @@
 const express = require('express');
 const router = express.Router();
+const conversionRoutes = require('./conversion/index');
 
-// Home page
-router.get('/', (req, res) => {
-    res.render('pages/home', { 
-        title: 'SmartPDF - Privacy-First PDF Tools',
-        heading: 'Welcome to SmartPDF'
-    });
-});
-
-// About page
-router.get('/about', (req, res) => {
-    res.render('pages/about', { 
-        title: 'About SmartPDF',
-        heading: 'About SmartPDF'
-    });
-});
+router.use('/api/conversion', conversionRoutes);
 
 module.exports = router;

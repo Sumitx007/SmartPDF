@@ -1,19 +1,24 @@
 {
   "name": "smartpdf",
   "version": "1.0.0",
-  "description": "Pdf manipulation tool",
+  "description": "nothing",
+  "license": "ISC",
+  "author": "sumit",
+  "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
-  "keywords": [],
-  "author": "Sumit",
-  "license": "ISC",
-  "type": "commonjs",
   "dependencies": {
+    "axios": "^1.11.0",
     "dotenv": "^17.2.1",
     "ejs": "^3.1.10",
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "mongoose": "^8.18.0",
+    "multer": "^2.0.2",
+    "uuid": "^11.1.0"
   },
   "devDependencies": {
     "nodemon": "^3.1.10"
